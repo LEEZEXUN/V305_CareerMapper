@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Company">
+
+
+    <ImageView
+        android:id="@+id/intel"
+        android:layout_width="68dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+
+        android:background="@drawable/intel"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="375dp"
+        android:layout_height="98dp"
+        android:text="Intel is a multinational technology company that designs and manufactures computer processors and other hardware components. Founded in 1968, Intel has become one of the world's largest and most influential technology companies, with a wide range of products and services spanning from personal computers and servers to data centers, internet of things devices, and artificial intelligence."
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/intel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+         />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HR Consultation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+         />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured Jobs"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HR" />
+         />
+
+    <ImageView
+        android:id="@+id/HR"
+        android:layout_width="327dp"
+        android:layout_height="174dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/job1"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/job1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+
+    <ImageButton
+        android:id="@+id/job2"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/job2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job1"/>
+<!--        android:elevation="100dp"-->
+
+    <Button
+        android:id="@+id/btn_message1"
+
+        android:layout_width="130dp"
+
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/purplerectangular"
+        android:ems="12"
+        android:text="Message"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/HR"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintLeft_toLeftOf="@id/HR"
+        app:layout_constraintRight_toRightOf="@id/HR"
+
+
+        app:layout_constraintTop_toTopOf="@id/HR"
+        app:layout_constraintVertical_bias="0.866" />
+
+    />
+
+    <Button
+        android:id="@+id/btn_message2"
+
+        android:layout_width="130dp"
+
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/purplerectangular"
+        android:ems="12"
+        android:text="Message"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_message1"
+        app:layout_constraintTop_toTopOf="@id/HR" />
+
+    />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_back"
+        android:src="@drawable/left_arrow"
+        android:background="#F6F6F6"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
